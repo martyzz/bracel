@@ -1,0 +1,27 @@
+{
+  "name": "bracel",
+  "version": "0.0.1",
+  "description": "HTML transpiler allowing you to write your HTML more like you write your JavaScript.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "bracel": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martyzz/bracel.git"
+  },
+  "keywords": [
+    "html",
+    "transpiler",
+    "scope"
+  ],
+  "author": "Martin Mach <personal@machmartin.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martyzz/bracel/issues"
+  },
+  "homepage": "https://github.com/martyzz/bracel#readme"
+}
