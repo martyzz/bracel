@@ -1,13 +1,20 @@
+const {
+  TOKEN_TYPE_TAG_BEGIN,
+  TOKEN_TYPE_TAG_END,
+  TOKEN_TYPE_TAG_COMPACT,
+  TOKEN_TYPE_ESCAPE,
+} = require("./constants");
+
 /**
  * This function is slighly adjusted
  * version of this gist https://gist.github.com/borgar/451393
  */
 const tokenize = input => {
   const matchers = {
-    escape: /(\\\{|\\\}|\\\;)/,
-    start: /([a-zA-Z0-9\!]+)\s*(\(.*\))?\s*(\:)?\s*(\{)/,
-    end: /(\})/,
-    compact: /([a-zA-Z0-9\!]+)\s*(\(.*\))?\s*(\;)/
+    [TOKEN_TYPE_ESCAPE]: /(\\\{|\\\}|\\\;)/,
+    [TOKEN_TYPE_TAG_BEGIN]: /([a-zA-Z0-9\!]+)\s*(\(.*\))?\s*(\:)?\s*(\{)/,
+    [TOKEN_TYPE_TAG_END]: /(\})/,
+    [TOKEN_TYPE_TAG_COMPACT]: /([a-zA-Z0-9\!]+)\s*(\(.*\))?\s*(\;)/
   };
 
   let cursor, result, token, tokens = [];
