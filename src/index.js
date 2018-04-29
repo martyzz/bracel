@@ -1,10 +1,14 @@
 #!/usr/bin/env node
+const bracel = require("./bracel");
+
+if (require.main !== module) {
+    module.exports = bracel;
+    return;
+}
 
 const commandLineArgs = require("command-line-args");
 const commandLineUsage = require("command-line-usage");
 const fs = require("fs");
-
-const bracel = require("./bracel");
 
 const optionDefinitions = [
   { name: "input", alias: "i", type: String },
