@@ -1,6 +1,12 @@
 # bracel
 HTML transpiler allowing you to write your HTML more like you write your JavaScript.
 
+## Instalation
+```
+$ npm install -g bracel
+$ bracel --help
+```
+
 ## Syntax
 
 The idea is that paired HTML tags are be represented as a function scopes and unpaired HTML tags are represented as expressions (ending with semicolon).
