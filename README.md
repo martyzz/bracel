@@ -188,6 +188,23 @@ body {
 </body>
 ```
 
+## Usage with Gulp
+There is no `gulp-bracel` plugin yet, temporary usage with Gulp:
+```
+const gulp = require("gulp");
+
+const transform = require("gulp-transform");
+const rename = require("gulp-rename");
+const bracel = require("bracel");
+
+gulp.task("transpile:html", () => {
+  return gulp.src("./src/**/*.bracel")
+    .pipe(transform("utf8", input => bracel(input)))
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("./dist/"));
+});
+```
+
 ## Roadmap
 - Finding out if somebody actually likes this syntax
 
