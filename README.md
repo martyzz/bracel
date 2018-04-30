@@ -1,6 +1,10 @@
 # bracel
 HTML transpiler allowing you to write your HTML more like you write your JavaScript.
 
+## Try it out
+[https://martyzz.github.io/bracel/](https://martyzz.github.io/bracel/)
+
+
 ## Instalation
 ```
 $ npm install -g bracel
