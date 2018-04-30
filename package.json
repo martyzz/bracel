@@ -1,6 +1,6 @@
 {
   "name": "bracel",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "HTML transpiler allowing you to write your HTML more like you write your JavaScript.",
   "main": "./src/index.js",
   "scripts": {
