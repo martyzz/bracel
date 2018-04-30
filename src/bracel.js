@@ -10,5 +10,8 @@ const bracel = input => {
   return markup;
 };
 
-module.exports = bracel;
-if (window) window.bracel = bracel;
+if (typeof window === "undefined") {
+  module.exports = bracel;
+} else {
+  window.bracel = bracel;
+}
