@@ -11,3 +11,4 @@ const bracel = input => {
 };
 
 module.exports = bracel;
+if (window) window.bracel = bracel;

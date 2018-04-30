@@ -43,9 +43,9 @@ if (options.help) {
         }
       ]
     }
-  ]
-  const usage = commandLineUsage(sections)
-  console.log(usage)
+  ];
+  const usage = commandLineUsage(sections);
+  console.log(usage);
   return;
 }
 
